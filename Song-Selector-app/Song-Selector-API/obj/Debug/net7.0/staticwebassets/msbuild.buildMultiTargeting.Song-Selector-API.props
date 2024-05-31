@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Song-Selector-API.props" />
+</Project>

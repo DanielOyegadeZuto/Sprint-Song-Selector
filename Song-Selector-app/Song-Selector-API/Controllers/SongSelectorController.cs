@@ -14,7 +14,7 @@ namespace Song_Selector_app.Controllers
             _spotifyService = spotifyService;
         }
 
-        [HttpGet]
+        [HttpGet("/getArtistInfo")]
         public async Task<IActionResult> GetArtistInfo()
         {
             string artistId = "4wyNyxs74Ux8UIDopNjIai?si=I2w3dRHeTi2cP1Ag7sErYw";

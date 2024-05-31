@@ -17,7 +17,9 @@ namespace Song_Selector_app.Services
 
         public async Task<dynamic> GetArtistInfo(string clientId, string clientSecret, string artistId)
         {
-            string accessToken = await GetAccessToken(clientId, clientSecret);
+            var getAccessToken = new GetAccessTokens(_clientFactory);
+            
+            string accessToken = await getAccessToken.GetAccessToken(clientId, clientSecret);
 
             if (!string.IsNullOrEmpty(accessToken))
             {
@@ -41,32 +43,6 @@ namespace Song_Selector_app.Services
             else
             {
                 throw new HttpRequestException("Failed to get access token.");
-            }
-        }
- 
-        private async Task<string> GetAccessToken(string clientId, string clientSecret)
-        {
-            var client = _clientFactory.CreateClient();
-            var request = new HttpRequestMessage(HttpMethod.Post, "https://accounts.spotify.com/api/token");
-
-            var base64Auth = Convert.ToBase64String(System.Text.Encoding.ASCII.GetBytes($"{clientId}:{clientSecret}"));
-            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", base64Auth);
-
-            request.Content = new FormUrlEncodedContent(new Dictionary<string, string>
-            {
-                {"grant_type", "client_credentials"}
-            });
-
-            var response = await client.SendAsync(request);
-            if (response.IsSuccessStatusCode)
-            {
-                var responseContent = await response.Content.ReadAsStringAsync();
-                dynamic responseData = JsonConvert.DeserializeObject(responseContent);
-                return responseData.access_token;
-            }
-            else
-            {
-                return null;
             }
         }
     }

@@ -7,9 +7,9 @@ namespace Song_Selector_app.Controllers
 {
     public class SongSelectorController : ControllerBase
     {
-        private readonly SpotifyService _spotifyService;
+        private readonly ISpotifyService _spotifyService;
 
-        public SongSelectorController(SpotifyService spotifyService)
+        public SongSelectorController(ISpotifyService spotifyService)
         {
             _spotifyService = spotifyService;
         }

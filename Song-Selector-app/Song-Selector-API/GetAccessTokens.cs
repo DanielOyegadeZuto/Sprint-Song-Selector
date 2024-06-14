@@ -6,7 +6,6 @@ public class GetAccessTokens
 {
     private readonly IHttpClientFactory _clientFactory;
     
-    
     public GetAccessTokens(IHttpClientFactory clientFactory)
     {
         _clientFactory = clientFactory;

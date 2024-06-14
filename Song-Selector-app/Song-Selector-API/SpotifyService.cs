@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace Song_Selector_app.Services
 {
-    public class SpotifyService
+    public class SpotifyService :ISpotifyService
     {
         private readonly IHttpClientFactory _clientFactory;
 

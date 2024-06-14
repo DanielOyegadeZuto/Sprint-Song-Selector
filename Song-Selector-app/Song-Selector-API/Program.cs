@@ -3,7 +3,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models; 
+using Microsoft.OpenApi.Models;
+using Song_Selector_app;
 using Song_Selector_app.Controllers;
 using Song_Selector_app.Services;
 
@@ -17,7 +18,7 @@ builder.Host.ConfigureServices((_, services) =>
         services.AddHttpClient();
 
         //// Add SongSelectorController as a service
-        //services.AddScoped<SpotifyService>();
+        services.AddScoped<ISpotifyService, SpotifyService>();
         //services.AddScoped<SongSelectorController>();
 
         //// Add HealthChecker as a service

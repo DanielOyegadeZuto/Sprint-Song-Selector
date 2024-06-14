@@ -58,6 +58,22 @@
           }
         }
       },
+      "Newtonsoft.Json.Bson/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.5.0": {
         "type": "package",
         "dependencies": {
@@ -414,6 +430,27 @@
         "packageIcon.png"
       ]
     },
+    "Newtonsoft.Json.Bson/1.0.2": {
+      "sha512": "QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "type": "package",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net45/Newtonsoft.Json.Bson.dll",
+        "lib/net45/Newtonsoft.Json.Bson.pdb",
+        "lib/net45/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
+        "newtonsoft.json.bson.1.0.2.nupkg.sha512",
+        "newtonsoft.json.bson.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.5.0": {
       "sha512": "FK05XokgjgwlCI6wCT+D4/abtQkL1X1/B9Oas6uIwHFmYrIO9WUD5aLC9IzMs9GnHfUXOtXZ2S43gN1mhs5+aA==",
       "type": "package",
@@ -509,25 +546,26 @@
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.12",
       "Newtonsoft.Json >= 13.0.3",
+      "Newtonsoft.Json.Bson >= 1.0.2",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "Swashbuckle.AspNetCore.Swagger >= 6.5.0",
       "Swashbuckle.AspNetCore.SwaggerGen >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rob.harrison\\.nuget\\packages\\": {}
+    "C:\\Users\\daniel.oyegade\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ZutoCode\\Sprint-Song-Selector\\Song-Selector-app\\Song-Selector-API\\Song-Selector-API.csproj",
+      "projectUniqueName": "C:\\Code\\Manchester-Digital-Code\\Sprint-Song-Selector\\Song-Selector-app\\Song-Selector-API\\Song-Selector-API.csproj",
       "projectName": "Song-Selector-API",
-      "projectPath": "C:\\ZutoCode\\Sprint-Song-Selector\\Song-Selector-app\\Song-Selector-API\\Song-Selector-API.csproj",
-      "packagesPath": "C:\\Users\\Rob.harrison\\.nuget\\packages\\",
-      "outputPath": "C:\\ZutoCode\\Sprint-Song-Selector\\Song-Selector-app\\Song-Selector-API\\obj\\",
+      "projectPath": "C:\\Code\\Manchester-Digital-Code\\Sprint-Song-Selector\\Song-Selector-app\\Song-Selector-API\\Song-Selector-API.csproj",
+      "packagesPath": "C:\\Users\\daniel.oyegade\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\Manchester-Digital-Code\\Sprint-Song-Selector\\Song-Selector-app\\Song-Selector-API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rob.harrison\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\daniel.oyegade\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -535,7 +573,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "http://nexus.build.zuto.cloud:8081/nexus/service/local/nuget/cl4u/": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://www.myget.org/F/applicationinsights-sdk-labs/api/v3/index.json": {}
@@ -563,6 +600,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Newtonsoft.Json.Bson": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -596,7 +637,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   },

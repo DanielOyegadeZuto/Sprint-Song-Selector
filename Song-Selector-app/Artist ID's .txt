@@ -1,0 +1,27 @@
+Artist ID's 
+
+Pink Floyd : http://localhost:5145/SongSelector/getArtistSongs?artistId=0k17h0D3J5VfsdmQ1iZtE9&letter=A
+
+King Krule : http://localhost:5145/SongSelector/getArtistSongs?artistId=4wyNyxs74Ux8UIDopNjIai&letter=K
+
+Beatles : http://localhost:5145/SongSelector/getArtistSongs?artistId=3WrFJ7ztbogyGnTHbHJFl2&letter=B
+
+http://localhost:5145/SongSelector/getArtistSongs?artistId=0k17h0D3J5VfsdmQ1iZtE9&letter=A
+
+
+
+4wyNyxs74Ux8UIDopNjIai
+
+
+3MM8mtgFzaEJsqbjZBSsHJ
+
+1dfeR4HaWDbWqFHLkxsg1d
+
+7dUeQwfHuOEQGH5PbksGf6
+
+4DMSJzGjw2SMkKAT5EEE5u
+
+2PBE0KQEqT34oYjjFyI9Mz
+
+5eJJoSS6weFQeI9AtNFLee
+

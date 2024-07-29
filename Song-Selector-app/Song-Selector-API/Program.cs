@@ -1,34 +1,25 @@
-using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Song_Selector_app;
-using Song_Selector_app.Controllers;
 using Song_Selector_app.Services;
+using Song_Selector_app;
 
-
-// Create a host builder
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.ConfigureServices((_, services) =>
-    {
-        // Add HttpClientFactory
-        services.AddHttpClient();
+{
+    // Add HttpClientFactory
+    services.AddHttpClient();
 
-        //// Add SongSelectorController as a service
-        services.AddScoped<ISpotifyService, SpotifyService>();
-        //services.AddScoped<SongSelectorController>();
+    // Add SpotifyService as a service
+    services.AddScoped<ISpotifyService, SpotifyService>();
 
-        //// Add HealthChecker as a service
-        //services.AddScoped<IHealthChecker, BasicHealthChecker>();
+    // Add GetAccessTokens as a service
+    services.AddScoped<GetAccessTokens>();
 
-    });
+    // Add logging
+    services.AddLogging();
+});
 
-// Build and run the host
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -37,7 +28,6 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -51,5 +41,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
-

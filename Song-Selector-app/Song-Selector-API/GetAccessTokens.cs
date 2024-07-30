@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
 
+
 namespace Song_Selector_app
 {
     public class GetAccessTokens
@@ -13,7 +14,7 @@ namespace Song_Selector_app
             _logger = logger;
         }
 
-        public async Task<string> GetAccessToken(string clientId, string clientSecret)
+        public virtual async Task<string> GetAccessToken(string clientId, string clientSecret)
         {
             var client = _clientFactory.CreateClient();
             var request = new HttpRequestMessage(HttpMethod.Post, "https://accounts.spotify.com/api/token");

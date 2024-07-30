@@ -4,11 +4,10 @@ using Song_Selector_app.Controllers;
 using Song_Selector_app.Services;
 using Microsoft.AspNetCore.Mvc;
 using FluentAssertions;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace SongSelector.Tests
 {
+    [TestFixture]
     public class SongSelectorControllerTests
     {
         private Mock<ISpotifyService> _spotifyServiceMock;

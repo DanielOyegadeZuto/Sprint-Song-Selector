@@ -1,7 +1,22 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7b0dbcd1_002D9dab_002D4ab4_002Db99e_002D0fead8a8090c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SpotifyServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=17c8da7f_002D0c93_002D4ecd_002Db143_002D627e96331776/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SpotifyServiceTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::32A2CFAB-4166-4D62-A73D-914AF69583B8::net7.0::SongSelector.Tests.SpotifyServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=65d0ca95_002Dcdfb_002D41be_002D864c_002D05cc79bab392/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SongSelectorControllerTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::32A2CFAB-4166-4D62-A73D-914AF69583B8::net7.0::SongSelector.Tests.SongSelectorControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::32A2CFAB-4166-4D62-A73D-914AF69583B8::net7.0::SongSelector.Tests.SpotifyServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=94554bea_002D40aa_002D4c07_002Daeca_002D3e00380d626e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SpotifyServiceTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::32A2CFAB-4166-4D62-A73D-914AF69583B8::net7.0::SongSelector.Tests.SpotifyServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bef15107_002Df6a9_002D45e6_002D82ba_002D0859243834d1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SpotifyServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::32A2CFAB-4166-4D62-A73D-914AF69583B8::net7.0::SongSelector.Tests.SongSelectorControllerTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

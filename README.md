@@ -55,8 +55,9 @@ o	The response will display a list of songs from the specified artist, filtered 
 Output
 The output will be a JSON object containing a list of songs matching the criteria. For example:
 
-
-
-
-
-
+{
+  "Songs": [
+    "Another Brick in the Wall",
+    "Astronomy Domine"
+  ]
+}
